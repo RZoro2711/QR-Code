@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <title>Frontend Mentor | QR code component</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      body {
+        background-color: rgb(225, 221, 221);
+      }
+      .container{
+        width: 340px;
+        height: auto;
+        margin: 0px auto;
+        background-color: white;
+        border-radius: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 5px 5px 5px black;
+      }
+      img{
+        width: 300px;
+        margin: auto;
+        display: block;
+        padding: 20px;
+        border-radius: 30px;
+      }
+      .content{
+        width: 280px;
+        text-align: justify;
+        margin: auto;
+        text-align: center;
+      }
+      .content > h2{
+        padding-bottom: 5px;
+      }
+      .content > p{
+        width: 260px;
+        padding-bottom: 20px;
+      }
+      @media(max-width:700px){
+        .container{
+          width:380px ;
+        }
+        img{
+          width: 340px;
+        }
+        .content h2{
+          font-size: 24px;
+          padding: 0%;
+        }
+        .content p{
+          margin: auto;
+          width: 280px;
+          font-size: 18px;
+
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/image-qr-code.png" alt="QR">
+      <div class="content">
+        <h2>Improve your front-end <br>skills by building projects</h2>
+        <p>Scan the QR code to visit Frontend Mentor and take coding skills to the next level</p>
+      </div>
+    </div>
+
+    <div class="attribution">Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Khunn Satt Ko Ko</a>.
+    </div>
+  </body>
+</html>
